@@ -11,4 +11,8 @@ describe 'The simple string', 'A string' do
     expect(@str).to_not be_empty
   end
 
+  it "should be a String" do
+    @str.should be_a(String) # the older RSpec way to declare expectations
+  end
+
 end
