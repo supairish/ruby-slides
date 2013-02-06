@@ -1,7 +1,7 @@
-# IF/UNLESS equivalents
+# IF/UNLESS equivalents.  See if_unless_2.rb for unless equivalents.
 
 # If control structures
-if x < 5 then
+if x < 5 then # then is optional
   statement1
 end
 
@@ -11,6 +11,14 @@ else
   statement2
 end
 
+statement1 if y == 3
+
+x = if a > 0 then b else c end
+
+# ternary example
+x == 'a' ? statement1 : statement2
+
+# if/elsif/else example
 if x < 5 then
   statement1
 elsif x >= 5
@@ -18,23 +26,3 @@ elsif x >= 5
 else
   statement3
 end
-
-statement1 if y == 3
-
-x = if a > 0 then b else c end
-
-
-# unless control structures
-unless x >= 5 then
-  statement1
-end
-
-unless x < 5 then
-  statement2
-else
-  statement1
-end
-
-statement1 unless y != 3
-
-x = unless a <= 0 then c else b end
